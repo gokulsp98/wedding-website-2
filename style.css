@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 1px solid red;
+}
+
+
+:root {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+.persons {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+
+.words {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-size: 0.8rem;
+}
+
+
+
+.outer {
+
+    display: grid;
+
+}
+
+
+.content {
+    display: grid;
+    height: 100vh;
+    background-color: white;
+    grid-template-areas:
+        "element1 element1 element1"
+        "element2 element2 element2"
+        "element3 element3 element3"
+        "element4 element5 element6"
+        "element7 element7 element7"
+        "element8 element8 element8"
+        "element9 element10 element11"
+        "element12 element12 element12"
+        "element13 element13 element13"
+        "element14 element14 element14"
+        "element15 element15 element15"
+        "element16 element18 element17"
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+
+    /* outline: 2px solid violet; */
+
+
+}
+
+
+
+
+
+.element1 {
+    padding-top: 20px;
+    grid-area: element1;
+    font-size: 2rem;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    opacity: 0;
+    transform: translate(0px, -20px);
+    animation: join-us 4s ease forwards;
+}
+
+.element2 {
+    grid-area: element2;
+    font-size: 0.8rem;
+    transform: translate(0px, -20px);
+    opacity: 0;
+    animation: for-the-wedding-of 4s ease forwards;
+}
+
+.element3 {
+
+    width: 400px;
+    height: 150px;
+    transform: rotate(180deg) translate(0, 30px);
+    grid-area: element3;
+    opacity: 0;
+    animation: up-flower 4s ease forwards;
+}
+
+.element4 {
+    grid-area: element4;
+    justify-self: end;
+    opacity: 0;
+    transform: translate(-30px, 0px);
+    animation: phines 4s ease forwards;
+}
+
+.element5 {
+    grid-area: element5;
+    justify-self: center;
+    opacity: 0;
+    animation: and-symbol 6s ease forwards;
+}
+
+.element6 {
+    grid-area: element6;
+    justify-self: start;
+    transform: translate(30px, 0px);
+    animation: isabella 4s ease forwards;
+    opacity: 0;
+}
+
+.element7 {
+    width: 400px;
+    height: 150px;
+    grid-area: element7;
+    opacity: 0;
+    transform: translate(0, 30px);
+    animation: down-flower 4s ease forwards;
+}
+
+.element8 {
+    grid-area: element8;
+    transform: translate(-10px, 30px);
+    opacity: 0;
+    align-self: center;
+    white-space: normal;
+    animation: wedding-month 4s ease forwards;
+
+}
+
+.element9 {
+    height: 1.4rem;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: black;
+    font-size: 1rem;
+    transform: translate(40px, 30px);
+    grid-area: element9;
+    opacity: 0;
+    animation: wedding-day 4s ease forwards;
+    justify-self: end;
+    align-self: center;
+}
+
+.element10 {
+    font-size: 2em;
+    grid-area: element10;
+    opacity: 0;
+    transform: translate(0, 30px);
+    animation: wedding-date 4s ease forwards;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.element11 {
+    display: inline-block;
+    height: 1.4rem;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: black;
+    font-size: 1rem;
+    transform: translate(-40px, 30px);
+    grid-area: element11;
+    opacity: 0;
+    animation: wedding-time 4s ease forwards;
+    justify-self: start;
+    align-self: center;
+}
+
+.element12 {
+    grid-area: element12;
+    opacity: 0;
+    transform: translate(-10px, 30px);
+    animation: wedding-year 4s ease forwards;
+}
+
+.element13 {
+    grid-area: element13;
+    opacity: 0;
+    transform: translate(0, 30px);
+    animation: wedding-address 4s ease forwards
+}
+
+.element14 {
+    transform: translate(0rem, 4rem);
+    grid-area: element14;
+    font-size: 0.6rem;
+    opacity: 0;
+    animation: follow 7s ease forwards
+}
+
+.element15 {
+    transform: translate(0rem, 5rem);
+    font-family: "Tangerine", cursive;
+    grid-area: element15;
+    font-weight: 700;
+    font-size: 2rem;
+    opacity: 0;
+    animation: follow 7s ease forwards
+}
+
+.element16 {
+    transform: rotate(20deg) translate(-5px, -0.2rem);
+    grid-area: element16;
+    overflow: hidden;
+    align-self: stretch;
+    opacity: 0%;
+    animation: left-flower 4s ease forwards;
+}
+
+.element17 {
+    transform: rotate(-20deg) translate(5px, -0.2rem);
+    grid-area: element17;
+    overflow: hidden;
+    align-self: stretch;
+    opacity: 0%;
+    animation: right-flower 4s ease forwards;
+}
+
+
+
+@keyframes left-flower {
+    100% {
+        transform: rotate(20deg) translate(-5px, 5rem);
+        grid-area: element16;
+        align-self: stretch;
+        opacity: 50%;
+    }
+}
+
+
+@keyframes right-flower {
+    100% {
+        transform: rotate(-20deg) translate(5px, 5rem);
+        grid-area: element17;
+        align-self: stretch;
+        opacity: 50%;
+    }
+}
+
+
+
+@keyframes up-flower {
+    100% {
+        transform: rotate(180deg) translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes down-flower {
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes phines {
+    100% {
+        transform: translate(30px, 0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes isabella {
+    100% {
+        transform: translate(-30px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes and-symbol {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes join-us {
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes for-the-wedding-of {
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes wedding-day {
+    100% {
+        transform: translate(40px, 0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes wedding-time {
+    100% {
+        transform: translate(-40px, 0);
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes wedding-date {
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+
+
+}
+
+
+@keyframes wedding-year {
+    100% {
+        transform: translate(-10px, 0);
+        opacity: 1;
+    }
+
+
+
+}
+
+@keyframes wedding-month {
+    100% {
+        transform: translate(-10px, 0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes wedding-address {
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes follow {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 600px) {
+
+    :root {
+        margin: auto;
+        font-size: 30px;
+        max-width: 50vw;
+    }
+
+
+    @keyframes left-flower {
+        100% {
+            transform: rotate(20deg) translate(-5px, 2rem);
+            grid-area: element16;
+            align-self: stretch;
+            opacity: 50%;
+        }
+    }
+
+
+    @keyframes right-flower {
+        100% {
+            transform: rotate(-20deg) translate(5px, 2rem);
+            grid-area: element17;
+            align-self: stretch;
+            opacity: 50%;
+        }
+    }
+
+
+    @keyframes wedding-year {
+        100% {
+            transform: translate(-15px, 0);
+            opacity: 1;
+        }
+
+
+
+    }
+
+    @keyframes wedding-month {
+        100% {
+            transform: translate(-15px, 0);
+            opacity: 1;
+        }
+    }
+
+
+
+}
