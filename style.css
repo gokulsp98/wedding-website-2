@@ -98,7 +98,7 @@
     grid-area: element4;
     justify-self: end;
     opacity: 0;
-    transform: translate(-30px, 0px);
+    transform: translate(-20%x, 0px);
     animation: phines 4s ease forwards;
 
 }
@@ -113,7 +113,7 @@
 .element6 {
     grid-area: element6;
     justify-self: start;
-    transform: translate(30px, 0px);
+    transform: translate(20%, 0px);
     animation: isabella 4s ease forwards;
     opacity: 0;
 }
