@@ -98,7 +98,7 @@
     grid-area: element4;
     justify-self: end;
     opacity: 0;
-    transform: translate(-20%x, 0px);
+    transform: translate(-20%, 0px);
     animation: phines 4s ease forwards;
 
 }
