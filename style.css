@@ -17,7 +17,7 @@
 .persons {
     font-family: "Tangerine", cursive;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 
@@ -28,12 +28,6 @@
 }
 
 
-
-.outer {
-
-    display: grid;
-
-}
 
 
 .content {
@@ -55,12 +49,12 @@
         "element16 element18 element17"
     ;
 
-    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-columns: 33% 34% 33%;
     overflow: hidden;
 
     justify-items: center;
     align-items: center;
-    justify-self: center;
 
     /* outline: 2px solid violet; */
 
@@ -106,6 +100,7 @@
     opacity: 0;
     transform: translate(-30px, 0px);
     animation: phines 4s ease forwards;
+
 }
 
 .element5 {
@@ -134,7 +129,7 @@
 
 .element8 {
     grid-area: element8;
-    transform: translate(-10px, 30px);
+    transform: translate(0, 30px);
     opacity: 0;
     align-self: center;
     white-space: normal;
@@ -187,7 +182,7 @@
 .element12 {
     grid-area: element12;
     opacity: 0;
-    transform: translate(-10px, 30px);
+    transform: translate(0, 30px);
     animation: wedding-year 4s ease forwards;
 }
 
@@ -217,7 +212,7 @@
 }
 
 .element16 {
-    transform: rotate(20deg) translate(-5px, -0.2rem);
+    transform: rotate(20deg) translate(-5%, -0.2rem);
     grid-area: element16;
     overflow: hidden;
     align-self: stretch;
@@ -226,7 +221,7 @@
 }
 
 .element17 {
-    transform: rotate(-20deg) translate(5px, -0.2rem);
+    transform: rotate(-20deg) translate(5%, -0.2rem);
     grid-area: element17;
     overflow: hidden;
     align-self: stretch;
@@ -238,7 +233,7 @@
 
 @keyframes left-flower {
     100% {
-        transform: rotate(20deg) translate(-5px, 5rem);
+        transform: rotate(20deg) translate(-5%, 30%);
         grid-area: element16;
         align-self: stretch;
         opacity: 50%;
@@ -248,7 +243,7 @@
 
 @keyframes right-flower {
     100% {
-        transform: rotate(-20deg) translate(5px, 5rem);
+        transform: rotate(-20deg) translate(5%, 30%);
         grid-area: element17;
         align-self: stretch;
         opacity: 50%;
@@ -275,7 +270,7 @@
 
 @keyframes phines {
     100% {
-        transform: translate(30px, 0px);
+        transform: translate(20%, 0px);
         opacity: 1;
     }
 }
@@ -283,7 +278,7 @@
 
 @keyframes isabella {
     100% {
-        transform: translate(-30px, 0px);
+        transform: translate(-20%, 0px);
         opacity: 1;
     }
 }
@@ -339,7 +334,7 @@
 
 @keyframes wedding-year {
     100% {
-        transform: translate(-10px, 0);
+        transform: translate(0, 0);
         opacity: 1;
     }
 
@@ -349,7 +344,7 @@
 
 @keyframes wedding-month {
     100% {
-        transform: translate(-10px, 0);
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
@@ -378,42 +373,8 @@
         max-width: 50vw;
     }
 
-
-    @keyframes left-flower {
-        100% {
-            transform: rotate(20deg) translate(-5px, 2rem);
-            grid-area: element16;
-            align-self: stretch;
-            opacity: 50%;
-        }
-    }
-
-
-    @keyframes right-flower {
-        100% {
-            transform: rotate(-20deg) translate(5px, 2rem);
-            grid-area: element17;
-            align-self: stretch;
-            opacity: 50%;
-        }
-    }
-
-
-    @keyframes wedding-year {
-        100% {
-            transform: translate(-15px, 0);
-            opacity: 1;
-        }
-
-
-
-    }
-
-    @keyframes wedding-month {
-        100% {
-            transform: translate(-15px, 0);
-            opacity: 1;
-        }
+    .content {
+        overflow: visible;
     }
 
 
