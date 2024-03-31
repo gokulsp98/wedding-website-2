@@ -98,7 +98,7 @@
     grid-area: element4;
     justify-self: end;
     opacity: 0;
-    transform: translate(-20%, 0px);
+    transform: translate(-20%, 0%);
     animation: phines 4s ease forwards;
 
 }
@@ -113,7 +113,7 @@
 .element6 {
     grid-area: element6;
     justify-self: start;
-    transform: translate(20%, 0px);
+    transform: translate(20%, 0%);
     animation: isabella 4s ease forwards;
     opacity: 0;
 }
@@ -270,7 +270,7 @@
 
 @keyframes phines {
     100% {
-        transform: translate(20%, 0px);
+        transform: translate(20%, 0%);
         opacity: 1;
     }
 }
@@ -278,7 +278,7 @@
 
 @keyframes isabella {
     100% {
-        transform: translate(-20%, 0px);
+        transform: translate(-20%, 0%);
         opacity: 1;
     }
 }
